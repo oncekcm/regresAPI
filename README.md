@@ -134,7 +134,3 @@ Este proyecto incluye múltiples escenarios por cada endpoint probado, incluyend
 
 
 ---
-
-## 📜 Licencia
-
-MIT © 2025
