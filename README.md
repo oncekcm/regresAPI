@@ -73,7 +73,6 @@ mvn -version
 
 ```bash
 git clone https://github.com/oncekcm/regresAPI.git
-cd reqres-karate
 ```
 
 ---
