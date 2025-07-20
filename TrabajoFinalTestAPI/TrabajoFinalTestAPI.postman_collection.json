@@ -700,7 +700,7 @@
 					"name": "RequestAndResponce",
 					"item": [
 						{
-							"name": "GET_1",
+							"name": "1GET_LIST_USER",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -732,7 +732,7 @@
 							"response": []
 						},
 						{
-							"name": "GET_2",
+							"name": "2GET_SINGLE_USER",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -743,7 +743,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://reqres.in/api/users/3",
+									"raw": "https://reqres.in/api/users/2",
 									"protocol": "https",
 									"host": [
 										"reqres",
@@ -752,14 +752,14 @@
 									"path": [
 										"api",
 										"users",
-										"3"
+										"2"
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "GET_3_BUG1",
+							"name": "3GET_USER_NOT_FOUND",
 							"event": [
 								{
 									"listen": "test",
@@ -798,7 +798,7 @@
 							"response": []
 						},
 						{
-							"name": "GET_4_LIST",
+							"name": "4GET_LIST_SOURCE",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -824,7 +824,7 @@
 							"response": []
 						},
 						{
-							"name": "GET_5_SINGLE",
+							"name": "5GET_SINGLE",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -845,7 +845,7 @@
 							"response": []
 						},
 						{
-							"name": "GET_6_SINGLE",
+							"name": "6GET_SINGLE_NOT_FOUND",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -884,7 +884,7 @@
 							"response": []
 						},
 						{
-							"name": "POST_CREATE",
+							"name": "7POST_CREATE",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -919,7 +919,7 @@
 							"response": []
 						},
 						{
-							"name": "PUT_UPDATE",
+							"name": "8PUT_UPDATE",
 							"request": {
 								"method": "PUT",
 								"header": [
@@ -955,7 +955,7 @@
 							"response": []
 						},
 						{
-							"name": "PATH_UPDATE",
+							"name": "9PATH_UPDATE",
 							"request": {
 								"method": "PATCH",
 								"header": [
@@ -991,7 +991,7 @@
 							"response": []
 						},
 						{
-							"name": "DELETE_1",
+							"name": "10DELETE",
 							"request": {
 								"method": "DELETE",
 								"header": [
@@ -1018,7 +1018,7 @@
 							"response": []
 						},
 						{
-							"name": "POST_REGISTER_1",
+							"name": "11POST_REGISTER_SUCCESSFUL",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -1038,7 +1038,7 @@
 							"response": []
 						},
 						{
-							"name": "POST_REGISTER_2",
+							"name": "12POST_REGISTER_2",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -1058,7 +1058,7 @@
 							"response": []
 						},
 						{
-							"name": "POST_LOGIN_1",
+							"name": "13POST_LOGIN_SUCCESSFUL",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -1078,7 +1078,7 @@
 							"response": []
 						},
 						{
-							"name": "POST_LOGIN_2",
+							"name": "14POST_UNSUCCESSFUL",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -1098,6 +1098,1513 @@
 							"response": []
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "Montecinos Paola Lissette",
+			"item": [
+				{
+					"name": "SwaggerUI",
+					"item": [
+						{
+							"name": "PruebasTC",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://reqres.in/api/users?page=2",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "14. Link Clerk",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"clerk@example.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://reqres.in/api/clerk/link-pro",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"clerk",
+										"link-pro"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "15. SW-Sin API KEY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://reqres.in/api/clerk/auto-link-pro",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"clerk",
+										"auto-link-pro"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "15. SW-Con API KEY sin Body",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://reqres.in/api/clerk/auto-link-pro",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"clerk",
+										"auto-link-pro"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "15. SW-Con API KEY con Body",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"id\": 0,\r\n    \"email\": \"clerk@example.com\",\r\n    \"isPro\": true,\r\n    \"status\": \"Usuario vinculado exitosamente con suscripción Pro\",\r\n    \"hasApiKey\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://reqres.in/api/clerk/auto-link-pro",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"clerk",
+										"auto-link-pro"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "16. SW-Con API KEY",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://reqres.in/api/clerk/subscription-status",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"clerk",
+										"subscription-status"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "17. SW-PaymentStatus",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "18. Unlink Pro subscription",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://reqres.in/api/clerk/unlink-pro",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"clerk",
+										"unlink-pro"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "19. Get all custom endpoints for the authenticated user",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "20. Create a new custom endpoint",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Black\",\r\n  \"path\": \"string\",\r\n  \"method\": \"GET\",\r\n  \"response_data\": {},\r\n  \"status_code\": 200,\r\n  \"headers\": {}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://reqres.in/api/custom-endpoints",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"custom-endpoints"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "20. Create a new custom endpoint Body VACIO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Black\",\r\n  \"path\": \"string\",\r\n  \"method\": \"GET\",\r\n  \"response_data\": {},\r\n  \"status_code\": 200,\r\n  \"headers\": {}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://reqres.in/api/custom-endpoints",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"custom-endpoints"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "20. Create a new custom endpoint DUPLICADO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Black\",\r\n  \"path\": \"string\",\r\n  \"method\": \"GET\",\r\n  \"response_data\": {},\r\n  \"status_code\": 200,\r\n  \"headers\": {}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://reqres.in/api/custom-endpoints",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"custom-endpoints"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "21. Get a specific custom endpoint 721",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "21. Get a specific custom endpoint 2",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DanitzaMaygua",
+			"item": [
+				{
+					"name": "TC01 - Register sin password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"eve.holt@reqres.in\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/register",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/register' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"eve.holt@reqres.in\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC02 - Register sin email",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"password\": \"pistol\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/register",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/register' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"password\": \"pistol\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC03 - Usuario ya registrado",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"registered@reqres.in\",\r\n  \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/register",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/register' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"registered@reqres.in\",\r\n  \"password\": \"123456\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC04 - Campos vacíos en registro",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/register",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/register' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"\",\r\n  \"password\": \"\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC05 - Email con formato inválido",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"invalidemail\",\r\n  \"password\": \"pistol\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/register",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/register' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"invalidemail\",\r\n  \"password\": \"pistol\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC06 - Login exitoso",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"eve.holt@reqres.in\",\r\n  \"password\": \"cityslicka\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/login",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/login' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"eve.holt@reqres.in\",\r\n  \"password\": \"cityslicka\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC07 - Login con campo adicional ignorado",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"eve.holt@reqres.in\",\r\n  \"password\": \"cityslicka\",\r\n  \"remember_me\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/login",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/login' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"eve.holt@reqres.in\",\r\n  \"password\": \"cityslicka\",\r\n  \"remember_me\": true\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC08 - Login sin password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"eve.holt@reqres.in\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/login",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/login' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"eve.holt@reqres.in\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC09 - Login sin email",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"password\": \"cityslicka\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/login",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/login' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"password\": \"cityslicka\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC10 - Login con usuario inexistente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"noexiste@reqres.in\",\r\n  \"password\": \"cityslicka\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/login",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/login' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"noexiste@reqres.in\",\r\n  \"password\": \"cityslicka\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC11 - Login con password incorrecto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"eve.holt@reqres.in\",\r\n  \"password\": \"incorrecto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/login",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/login' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"eve.holt@reqres.in\",\r\n  \"password\": \"incorrecto\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC12 - Login con campos vacíos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/login",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/login' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"email\": \"\",\r\n  \"password\": \"\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": " TC13 - Delay 3 segundos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/users?delay=3",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "delay",
+									"value": "3"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://reqres.in/api/users?delay=3' \\\r\n  -H 'accept: application/json'"
+					},
+					"response": []
+				},
+				{
+					"name": " TC14 - Delay 0",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/users?delay=0",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "delay",
+									"value": "0"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://reqres.in/api/users?delay=0' \\\r\n  -H 'accept: application/json'"
+					},
+					"response": []
+				},
+				{
+					"name": " TC15 - Delay inválido",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/users?delay=abc",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "delay",
+									"value": "abc"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://reqres.in/api/users?delay=abc' \\\r\n  -H 'accept: application/json'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC16 - Actualizar usuario con datos válidos",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"morpheus\",\r\n  \"job\": \"zion resident\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/custom-endpoints/1",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom-endpoints",
+								"1"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'PUT' \\\r\n  'https://reqres.in/api/custom-endpoints/1' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -H 'x-api-key: reqres-free-v1' \\\r\n  -d '{\r\n  \"name\": \"morpheus\",\r\n  \"job\": \"zion resident\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC17 - Actualizar con body vacío",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/custom-endpoints/1",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom-endpoints",
+								"1"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'PUT' \\\r\n  'https://reqres.in/api/custom-endpoints/1' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -H 'x-api-key: reqres-free-v1' \\\r\n  -d '{}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC19 - PUT sin autorización",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"morpheus\",\r\n  \"job\": \"zion resident\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/custom-endpoints/1",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom-endpoints",
+								"1"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'PUT' \\\r\n  'https://reqres.in/api/custom-endpoints/1' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"name\": \"morpheus\",\r\n  \"job\": \"zion resident\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": " TC21 - DELETE usuario existente",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/custom-endpoints/2",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom-endpoints",
+								"2"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'DELETE' \\\r\n  'https://reqres.in/api/custom-endpoints/2' \\\r\n  -H 'accept: */*' \\\r\n  -H 'x-api-key: reqres-free-v1'"
+					},
+					"response": []
+				},
+				{
+					"name": " TC22 DELETE sin autorización",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/custom-endpoints/2",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom-endpoints",
+								"2"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'DELETE' \\\r\n  'https://reqres.in/api/custom-endpoints/2' \\\r\n  -H 'accept: */*'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC23 - DELETE con ID no numérico",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/custom-endpoints/abc",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom-endpoints",
+								"abc"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'DELETE' \\\r\n  'https://reqres.in/api/custom-endpoints/abc' \\\r\n  -H 'accept: */*' \\\r\n  -H 'x-api-key: reqres-free-v1'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC25 - DELETE recurso no existente",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/custom-endpoints/9999",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom-endpoints",
+								"9999"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'DELETE' \\\r\n  'https://reqres.in/api/custom-endpoints/9999' \\\r\n  -H 'accept: */*' \\\r\n  -H 'x-api-key: reqres-free-v1'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC26 - GET sin autorización",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/custom/endpoint",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom",
+								"endpoint"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://reqres.in/api/custom/endpoint' \\\r\n  -H 'accept: */*'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC27 - GET recurso no encontrado",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/custom/unknown-path",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom",
+								"unknown-path"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://reqres.in/api/custom/unknown-path' \\\r\n  -H 'accept: */*' \\\r\n  -H 'x-api-key: reqres-free-v1'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC28 - POST sin autorización",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "{\r\n  \"name\": \"neo\",\r\n  \"job\": \"chosen one\"\r\n}",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://reqres.in/api/custom/secure",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom",
+								"secure"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/custom/secure' \\\r\n  -H 'accept: */*' \\\r\n  -d '{\r\n  \"name\": \"neo\",\r\n  \"job\": \"chosen one\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC29 - POST en ruta no válida",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "{\r\n  \"name\": \"neo\",\r\n  \"job\": \"chosen one\"\r\n}",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://reqres.in/api/custom/wrong-path",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom",
+								"wrong-path"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://reqres.in/api/custom/wrong-path' \\\r\n  -H 'accept: */*' \\\r\n  -H 'x-api-key: reqres-free-v1' \\\r\n  -d '{\r\n  \"name\": \"neo\",\r\n  \"job\": \"chosen one\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC30 - PUT sin autorización",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "{\r\n  \"name\": \"trinity\",\r\n  \"job\": \"crew\"\r\n}",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://reqres.in/api/custom/protected",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom",
+								"protected"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'PUT' \\\r\n  'https://reqres.in/api/custom/protected' \\\r\n  -H 'accept: */*' \\\r\n  -d '{\r\n  \"name\": \"trinity\",\r\n  \"job\": \"crew\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC31 - PUT recurso no existente",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "{\r\n  \"name\": \"trinity\",\r\n  \"job\": \"crew\"\r\n}",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://reqres.in/api/custom/invalid-id",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom",
+								"invalid-id"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'PUT' \\\r\n  'https://reqres.in/api/custom/invalid-id' \\\r\n  -H 'accept: */*' \\\r\n  -H 'x-api-key: reqres-free-v1' \\\r\n  -d '{\r\n  \"name\": \"trinity\",\r\n  \"job\": \"crew\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC32 - PATCH sin autorización",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "{\r\n  \"job\": \"hacker\"\r\n}",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://reqres.in/api/custom/protected",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom",
+								"protected"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'PATCH' \\\r\n  'https://reqres.in/api/custom/protected' \\\r\n  -H 'accept: */*' \\\r\n  -d '{\r\n  \"job\": \"hacker\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC33 - PATCH recurso no existente",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "{\r\n  \"job\": \"hacker\"\r\n}",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://reqres.in/api/custom/does-not-exist",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom",
+								"does-not-exist"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'PATCH' \\\r\n  'https://reqres.in/api/custom/does-not-exist' \\\r\n  -H 'accept: */*' \\\r\n  -H 'x-api-key: reqres-free-v1' \\\r\n  -d '{\r\n  \"job\": \"hacker\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "TC34 - DELETE sin autorización",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "https://reqres.in/api/custom/secured-path",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"custom",
+								"secured-path"
+							]
+						},
+						"description": "Generated from cURL: curl -X 'DELETE' \\\r\n  'https://reqres.in/api/custom/secured-path' \\\r\n  -H 'accept: */*'"
+					},
+					"response": []
 				}
 			]
 		}
